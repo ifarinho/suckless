@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospaced:pixelsize=13:antialias=true:autohint=true";
+static char *font = "JetBrains Mono:pixelsize=13:antialias=true:autohint=true";
 static int borderpx = 4;
 
 /*
@@ -96,23 +96,23 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	
-	[0] = "#323437",
-	[1] = "#ff5454",
-	[2] = "#34c759",
-	[3] = "#e3c78a",
-	[4] = "#80a0ff",
-	[5] = "#d183e8",
-	[6] = "#32ade6",
-	[7] = "#a1aab8",
+   "#3b4252", /* black   */
+   "#bf616a", /* red     */
+   "#a3be8c", /* green   */
+   "#ebcb8b", /* yellow  */
+   "#81a1c1", /* blue    */
+   "#b48ead", /* magenta */
+   "#88c0d0", /* cyan    */
+   "#e5e9f0", /* white   */
 
-	[8] = "#7c8f8f",
-	[9] = "#ff5189",
-	[10] = "#30d158",
-	[11] = "#bfbf97",
-	[12] = "#74b2ff",
-	[13] = "#ae81ff",
-	[14] = "#64d2ff",
-	[15] = "#e2637f",
+   "#4c566a", /* black   */
+   "#bf616a", /* red     */
+   "#a3be8c", /* green   */
+   "#ebcb8b", /* yellow  */
+   "#81a1c1", /* blue    */
+   "#b48ead", /* magenta */
+   "#8fbcbb", /* cyan    */
+   "#eceff4", /* white   */
 
 	[255] = 0,
 
@@ -120,8 +120,8 @@ static const char *colorname[] = {
 	
 	[256] = "#282a36", 
 	[257] = "#f8f8f2",
-	[258] = "#080808",
-	[259]= "#eeeeee",
+	[258] = "#272d36",  /* "#2e3440", */
+	[259] = "#d8dee9",
 };
 
 
@@ -131,7 +131,7 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 259;
 unsigned int defaultbg = 258;
-unsigned int defaultcs = 7;
+unsigned int defaultcs = 259;
 static unsigned int defaultrcs = 257;
 /*
  * Default shape of cursor
