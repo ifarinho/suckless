@@ -26,8 +26,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-static const char *alttags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7" };
+static const char *alttags[] = { "1", "2", "3", "4", "5", "6", "7" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -46,8 +46,8 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "T",      tile },    /* []= first entry is default */
-	{ "F",      NULL },    /* ><> no layout function means floating behavior */
+	{ "T =",      tile },    /* []= first entry is default */
+	{ "F =",      NULL },    /* ><> no layout function means floating behavior */
 	{ "M",      monocle }, /* [M] */
 };
 
@@ -68,7 +68,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-c", "-l", "5", "-bw", "2", NULL };
 static const char *dmenuclipcmd[] = { "clipmenu", "-c", "-l", "5", "-bw", "2", NULL }; /* clipboard history */
-static const char *dmenupwrcmd[] = { "/home/ignacio/.local/src/dmenu/scripts/power.sh", NULL }; /* power menu */
+static const char *dmenupwrcmd[] = { "/home/ignacio/.local/suckless/dmenu/scripts/power.sh", NULL }; /* power menu */
 
 /* utilities  */
 static const char *termcmd[]  = { "st", NULL };
