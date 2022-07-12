@@ -34,8 +34,9 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	/* class                     instance           title                       tags mask     isfloating   monitor */
+    { "zoom ",                  "zoom ",            "Zoom Cloud Meetings",      1 << 6,       0,           -1 }, 
+    { "Pavucontrol",            "pavucontrol",      "Volume Control",           0,            1,           -1 }, 
 };
 
 /* layout(s) */
